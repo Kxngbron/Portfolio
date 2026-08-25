@@ -1,36 +1,29 @@
-/* Home.js, Bron Banks, 301391190, September 27, 2024 */
-
-import { Outlet, NavLink, Link } from "react-router-dom";
 import home_photo from "../assets/home_photo.png";
 
 const Home = () => {
-    return (
-        <>
-            <div className="pageDisplay">
-                <br/><h3 id="title"><i>Hello</i>, Welcome to My Personal Porfolio (Ghöst) <i className="fas fa-ghost"></i></h3><br/><br/>
-                <img src={home_photo} alt="Home Photo" id="home_photo" />
-                <p>
-                    <b id="sub_heading">Links to Each Page: </b>
-                    <ul>
-                        <li className="nav-item">
-                            <NavLink className="home-link" to="/services">Services</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="home-link" to="/projects">Projects</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="home-link" to="/about">About Me</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="home-link" to="/contact">Contact Me</NavLink>
-                        </li>
-                    </ul><br/><br/><br/><br/>
-                    <b id="sub_heading">Mission Statement: </b> As a software engineering student, my goal is to keep learning and growing every day, whether it's by solving complex coding problems or building software that makes life easier for others. I’m excited by the challenge of turning ideas into practical, working solutions that people can actually use and benefit from. I want to master the skills that help me build software that’s not just functional, but also meaningful—software that makes a difference. I believe in working hard, staying curious, and always pushing myself to improve, while staying true to ethical values and being part of a community that makes tech better for everyone.
-                </p>
-
+  return (
+    <section id="home" className="section hero-section">
+      <div className="section-inner">
+        <div className="hero">
+          <div>
+            <span className="eyebrow">Software Engineering Graduate</span>
+            <h1 className="section-title">Hi, I'm Bron Banks.</h1>
+            <p className="lede">
+              I'm a Software Engineering Technology graduate from Centennial College who builds
+              clean, reliable full-stack web applications. I enjoy turning ideas into practical
+              software people can actually use, and I'm currently looking for a full-stack or
+              mobile development roles where I can keep building and contribute from day one.
+            </p>
+            <div className="hero-actions">
+              <a className="btn btn-primary" href="#projects">View My Projects</a>
+              <a className="btn btn-secondary" href="#contact">Get In Touch</a>
             </div>
-        </>
-    )
+          </div>
+          <img src={home_photo} alt="Illustration of software development tools" className="hero-photo" />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Home;

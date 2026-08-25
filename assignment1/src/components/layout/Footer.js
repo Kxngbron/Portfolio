@@ -1,16 +1,24 @@
-/* Footer.js, Bron Banks, 301391190, September 27, 2024 */
-
 const Footer = () => {
-    return (
-        <div>
-            <br/>
-            <br/>
-            <br/>
-            <footer>
-                <p className="text-muted text-center">&copy;&nbsp;Copyright Bron Banks - COMP229 Web Application Development</p>
-            </footer>
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="site-footer">
+      <div className="site-footer-inner">
+        <p className="footer-copy">&copy; {year} Bron Banks. All rights reserved.</p>
+        <div className="footer-socials">
+          <a href="https://github.com/Kxngbron" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/bron-banks/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/whoisbron._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i className="fab fa-instagram"></i>
+          </a>
         </div>
-    );
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

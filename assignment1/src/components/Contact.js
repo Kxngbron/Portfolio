@@ -1,62 +1,63 @@
-/* Contact.js, Bron Banks, 301391190, September 27, 2024 */
-
 const Contact = () => {
-    return (
-        <>
-            <div className="pageDisplay">
-                <br/><h1 id="title">Contact Me</h1><br/>
-                <section>
-                    <legend>Contact Info</legend>
-                    <p id="contact">
-                        <i className="fas fa-phone"></i> Phone Number: 647-642-0305<br/>
-                        <i className="fas fa-envelope"></i> Email: bronbanks.bab@gmail.com<br/><br/>
-                        <i id="sub-contact">Socials:</i><br/>
-                        <a href="https://www.instagram.com/whoisbron._/" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram"></i> Instagram
-                        </a><br/>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin-in"></i> Linkedin
-                        </a><br/>
-                        <a href="https://github.com/Kxngbron" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-github"></i> GitHub
-                        </a>
-                    </p><br/>
-                </section><br/><br/>
-            <main>
-                <form action="mailto:bronbanks.bab@gmail.com" method="post">
-                <fieldset>
-                    <legend>Send A Message</legend>
-                        <p>
-                            <label id="personal" for="fname">First Name:</label>
-                            <input type="text" name="fname" size="25" tabindex="1" id="fname" placeholder="John" required />
-                        </p>
-                        <p>
-                            <label id="personal" for="lname">Last Name:</label>
-                            <input type="text" name="lname" size="25" tabindex="3" id="lname" placeholder="Doe" required />
-                        </p>
-                        <p>
-                            <label for="tele">Contact Number:</label>
-                            <input type="text" name="tele" size="12" tabindex="19" id="tele" placeholder="123-456-7089" required />
-                        </p>
-                        <p>
-                            <label id="personal" for="email">Email Address:</label>
-                            <input type="text" name="email" size="25" tabindex="7" id="email" placeholder="Johndoe@gmail.com"/>
-                        </p>
-                        <p>
-                            <label htmlFor="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" cols="33" placeholder="Write your message here..." required></textarea>
-                        </p><br/>
-                        <p id="button">
-                            <input type="submit" name="subbutton" value="Submit" tabindex="59" />
-                            <input type="reset" name="resetbutton" value="Reset" tabindex="61" />
-                        </p>
-                    </fieldset>
-                </form>
-            </main>
+  return (
+    <section id="contact" className="section section-tint">
+      <div className="section-inner">
+        <span className="eyebrow">Contact</span>
+        <h2 className="section-title">Contact Me</h2>
+        <p className="page-intro">Have an opportunity or question? I'd love to hear from you.</p>
 
+        <div className="contact-grid">
+          <div className="card contact-card">
+            <h3>Contact Info</h3>
+            <p className="contact-detail"><i className="fas fa-phone icon"></i> 647-642-0305</p>
+            <p className="contact-detail"><i className="fas fa-envelope icon"></i> bronbanks.bab@gmail.com</p>
+            <div className="contact-socials">
+              <a href="https://www.instagram.com/whoisbron._/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bron-banks/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Kxngbron" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i className="fab fa-github"></i>
+              </a>
             </div>
-        </>
-    )
+          </div>
+
+          <form className="card contact-form" action="mailto:bronbanks.bab@gmail.com" method="post">
+            <div className="form-row">
+              <div className="form-field">
+                <label htmlFor="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="John" required />
+              </div>
+              <div className="form-field">
+                <label htmlFor="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="form-field">
+                <label htmlFor="tele">Contact Number</label>
+                <input type="text" name="tele" id="tele" placeholder="123-456-7890" required />
+              </div>
+              <div className="form-field">
+                <label htmlFor="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" />
+              </div>
+            </div>
+            <div className="form-field">
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div className="form-actions">
+              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="reset" className="btn btn-secondary">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;

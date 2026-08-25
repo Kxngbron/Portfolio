@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="cf-title cf-desc">
+  <title id="cf-title">Cuisine Finder</title>
+  <desc id="cf-desc">Stylized illustration representing the Cuisine Finder restaurant discovery app</desc>
+  <defs>
+    <linearGradient id="cf-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="cf-phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="cf-map" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dcfce7"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cf-bg)"/>
+
+  <circle cx="90" cy="90" r="130" fill="#ffffff" opacity="0.07"/>
+  <circle cx="730" cy="90" r="90" fill="#fde68a" opacity="0.12"/>
+  <circle cx="700" cy="440" r="140" fill="#ffffff" opacity="0.06"/>
+
+  <g fill="#ffffff" opacity="0.55">
+    <circle cx="130" cy="230" r="3"/>
+    <circle cx="150" cy="260" r="3"/>
+    <circle cx="120" cy="290" r="3"/>
+    <circle cx="660" cy="180" r="3"/>
+    <circle cx="690" cy="210" r="3"/>
+    <circle cx="670" cy="240" r="3"/>
+  </g>
+
+  <!-- phone frame -->
+  <g transform="translate(300,44)">
+    <rect x="-10" y="-10" width="220" height="422" rx="34" fill="#111827" opacity="0.9"/>
+    <rect x="0" y="0" width="200" height="402" rx="26" fill="url(#cf-phone)"/>
+
+    <!-- map area -->
+    <rect x="12" y="14" width="176" height="230" rx="14" fill="url(#cf-map)"/>
+    <path d="M12,120 h176" stroke="#ffffff" stroke-width="4" opacity="0.6"/>
+    <path d="M70,14 v230" stroke="#ffffff" stroke-width="4" opacity="0.6"/>
+    <path d="M40,60 Q90,140 150,200" stroke="#ea580c" stroke-width="3" stroke-dasharray="2 6" fill="none" stroke-linecap="round"/>
+
+    <g>
+      <path d="M45,55 c0,-12 10,-20 20,-20 s20,8 20,20 c0,14 -20,32 -20,32 s-20,-18 -20,-32z" fill="#ef4444"/>
+      <circle cx="65" cy="53" r="7" fill="#ffffff"/>
+    </g>
+    <g>
+      <path d="M135,185 c0,-12 10,-20 20,-20 s20,8 20,20 c0,14 -20,32 -20,32 s-20,-18 -20,-32z" fill="#0d9488"/>
+      <circle cx="155" cy="183" r="7" fill="#ffffff"/>
+    </g>
+    <g>
+      <path d="M110,95 c0,-9 7,-15 15,-15 s15,6 15,15 c0,11 -15,24 -15,24 s-15,-13 -15,-24z" fill="#4f46e5"/>
+      <circle cx="125" cy="93" r="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cuisine chips -->
+    <rect x="12" y="254" width="50" height="18" rx="9" fill="#fee2e2"/>
+    <rect x="68" y="254" width="46" height="18" rx="9" fill="#fef3c7"/>
+    <rect x="120" y="254" width="42" height="18" rx="9" fill="#dcfce7"/>
+    <rect x="12" y="278" width="58" height="18" rx="9" fill="#e0e7ff"/>
+
+    <!-- restaurant list card -->
+    <rect x="12" y="306" width="176" height="80" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+    <rect x="24" y="318" width="56" height="56" rx="8" fill="#fed7aa"/>
+    <rect x="90" y="322" width="86" height="9" rx="4" fill="#334155"/>
+    <rect x="90" y="338" width="70" height="7" rx="4" fill="#94a3b8"/>
+    <rect x="90" y="354" width="60" height="7" rx="4" fill="#cbd5e1"/>
+    <circle cx="96" cy="372" r="3" fill="#f59e0b"/>
+    <circle cx="106" cy="372" r="3" fill="#f59e0b"/>
+    <circle cx="116" cy="372" r="3" fill="#f59e0b"/>
+    <circle cx="126" cy="372" r="3" fill="#e2e8f0"/>
+  </g>
+
+  <text x="400" y="470" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#ffffff">Cuisine Finder</text>
+  <text x="400" y="493" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#fed7aa">Restaurant Discovery App — GTA</text>
+</svg>

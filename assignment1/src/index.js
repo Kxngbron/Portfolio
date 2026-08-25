@@ -1,41 +1,50 @@
-/* index.js, Bron Banks, 301391190, September 27, 2024 */
-
+import { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/layout/Header";
+import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/layout/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import NotFound from "./components/NotFound";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css"
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "@fortawesome/fontawesome-free/js/all.min.js"
+function App() {
+  useEffect(() => {
+    const revealTargets = document.querySelectorAll(".section-inner");
 
-export default function App() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealTargets.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<Home />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+    <div className="app-shell">
+      <Sidebar />
+      <div className="main-content">
+        <Home />
+        <Services />
+        <Projects />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
+    </div>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
-
