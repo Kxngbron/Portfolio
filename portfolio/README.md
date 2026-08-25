@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Bron Banks — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio site for Bron Banks, a Software Engineering Technology graduate from
+Centennial College. A single-page React app with a sticky sidebar nav, smooth-scroll
+sections, and a showcase of real projects.
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- [React](https://react.dev/) 18
+- [Create React App](https://create-react-app.dev/) (`react-scripts`)
+- [Font Awesome](https://fontawesome.com/) for icons
+- Plain CSS with custom properties — no UI framework
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- One-page layout (Home, Services, Projects, About, Contact) navigated via a fixed
+  sidebar that highlights the active section as you scroll
+- Responsive design with a collapsible mobile nav
+- Scroll-reveal transitions between sections
+- Fully custom design system (no Bootstrap/Tailwind)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Featured Projects
 
-### `npm test`
+| Project | Description | Stack |
+|---|---|---|
+| [The Commons](https://the-commons-shell.vercel.app) ([repo](https://github.com/Kxngbron/The-Commons-Community-Organizer-)) | AI-assisted community engagement platform — social feed, event coordination, mutual-aid requests, and emergency alerts on a micro-frontend architecture | React, Node.js, GraphQL, MongoDB, Vite, Tailwind CSS |
+| [Cuisine Finder](https://github.com/Kxngbron/Cuisine-Finder) | Native Android app for discovering and navigating to restaurants across the GTA by cuisine type, with Google Maps routing | Kotlin, Jetpack Compose, Google Maps SDK, Material 3 |
+| Word Guessing Game | A hangman-style word guessing game | Vanilla JavaScript |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+```bash
+git clone https://github.com/Kxngbron/Portfolio.git
+cd Portfolio/portfolio
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Production build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+Bundles the app for production into the `build` folder.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+portfolio/
+├── public/            # Static assets, standalone project demos, resume
+└── src/
+    ├── assets/         # Images and generated icons
+    ├── components/     # Page sections (Home, Services, Projects, About, Contact)
+    │   └── layout/     # Sidebar and Footer
+    ├── index.css       # Design system and styles
+    └── index.js        # App entry point
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Email: [bronbanks.bab@gmail.com](mailto:bronbanks.bab@gmail.com)
+- LinkedIn: [linkedin.com/in/bron-banks](https://www.linkedin.com/in/bron-banks/)
+- GitHub: [@Kxngbron](https://github.com/Kxngbron)
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT — see [LICENSE](../LICENSE).
