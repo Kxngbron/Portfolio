@@ -1,6 +1,6 @@
 import theCommons from "../assets/the-commons.jpg";
+import onlineMarketing from "../assets/online-marketing.png";
 import cuisineFinder from "../assets/cuisine-finder.svg";
-import project3 from "../assets/project3.png";
 
 const projects = [
   {
@@ -10,9 +10,19 @@ const projects = [
       "An AI-assisted community engagement platform connecting neighborhoods through a social feed, event coordination, mutual-aid requests, and emergency alerts, built on a micro-frontend architecture with JWT auth and role-based access across four backend services.",
     link: "https://the-commons-shell.vercel.app",
     repo: "https://github.com/Kxngbron/The-Commons-Community-Organizer-",
-    tech: ["React", "Node.js", "GraphQL", "MongoDB", "Vite", "Tailwind CSS"],
+    tech: ["TypeScript", "React", "Node.js", "GraphQL", "MongoDB", "Vite", "Tailwind CSS"],
     alt: "Screenshot of The Commons homepage, showing the hero section and AI-generated community insights",
     featured: true,
+  },
+  {
+    name: "Online Marketing",
+    image: onlineMarketing,
+    description:
+      "A full-stack marketplace web app for browsing, filtering, and purchasing items across categories like electronics, furniture, and fashion, with a seller dashboard, persistent cart, and JWT-authenticated checkout flow backed by a Node/Express and MongoDB API.",
+    link: "https://online-marketing-u1mj.onrender.com",
+    repo: "https://github.com/Kxngbron/Online-Marketing",
+    tech: ["JavaScript", "React", "React Router", "Bootstrap", "Node.js", "MongoDB", "JWT"],
+    alt: "Screenshot of the Online Marketing app showing a filterable grid of item listings",
   },
   {
     name: "Cuisine Finder",
@@ -24,12 +34,6 @@ const projects = [
     linkIcon: "fa-github",
     tech: ["Kotlin", "Jetpack Compose", "Google Maps SDK", "Material 3"],
     alt: "Illustration of the Cuisine Finder app showing a restaurant map with pins and a restaurant listing",
-  },
-  {
-    name: "Word Guessing Game",
-    image: project3,
-    description: "A hangman-style word guessing game built with vanilla JavaScript.",
-    link: "/Project3/index.html",
   },
 ];
 

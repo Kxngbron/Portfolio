@@ -6,8 +6,8 @@ sections, and a showcase of real projects.
 
 ## Built With
 
-- [React](https://react.dev/) 18
-- [Create React App](https://create-react-app.dev/) (`react-scripts`)
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) for dev server and bundling
 - [Font Awesome](https://fontawesome.com/) for icons
 - Plain CSS with custom properties — no UI framework
 
@@ -23,9 +23,9 @@ sections, and a showcase of real projects.
 
 | Project | Description | Stack |
 |---|---|---|
-| [The Commons](https://the-commons-shell.vercel.app) ([repo](https://github.com/Kxngbron/The-Commons-Community-Organizer-)) | AI-assisted community engagement platform — social feed, event coordination, mutual-aid requests, and emergency alerts on a micro-frontend architecture | React, Node.js, GraphQL, MongoDB, Vite, Tailwind CSS |
+| [The Commons](https://the-commons-shell.vercel.app) ([repo](https://github.com/Kxngbron/The-Commons-Community-Organizer-)) | AI-assisted community engagement platform — social feed, event coordination, mutual-aid requests, and emergency alerts on a micro-frontend architecture | TypeScript, React, Node.js, GraphQL, MongoDB, Vite, Tailwind CSS |
+| [Online Marketing](https://online-marketing-u1mj.onrender.com) ([repo](https://github.com/Kxngbron/Online-Marketing)) | Full-stack marketplace app — filterable listings, persistent cart, JWT-authenticated checkout, and a seller dashboard | JavaScript, React, React Router, Bootstrap, Node.js, MongoDB, JWT |
 | [Cuisine Finder](https://github.com/Kxngbron/Cuisine-Finder) | Native Android app for discovering and navigating to restaurants across the GTA by cuisine type, with Google Maps routing | Kotlin, Jetpack Compose, Google Maps SDK, Material 3 |
-| Word Guessing Game | A hangman-style word guessing game | Vanilla JavaScript |
 
 ## Getting Started
 
@@ -56,7 +56,7 @@ portfolio/
     ├── components/     # Page sections (Home, Services, Projects, About, Contact)
     │   └── layout/     # Sidebar and Footer
     ├── index.css       # Design system and styles
-    └── index.js        # App entry point
+    └── main.jsx        # App entry point
 ```
 
 ## Contact
