@@ -9,7 +9,7 @@ const projects = [
     description:
       "An AI-assisted community engagement platform connecting neighborhoods through a social feed, event coordination, mutual-aid requests, and emergency alerts, built on a micro-frontend architecture with JWT auth and role-based access across four backend services.",
     link: "https://the-commons-shell.vercel.app",
-    repo: "https://github.com/Kxngbron/The-Commons-Community-Organizer-",
+    repo: "https://github.com/Bron-Banks/The-Commons",
     tech: ["TypeScript", "React", "Node.js", "GraphQL", "MongoDB", "Vite", "Tailwind CSS"],
     alt: "Screenshot of The Commons homepage, showing the hero section and AI-generated community insights",
     featured: true,
@@ -20,7 +20,7 @@ const projects = [
     description:
       "A full-stack marketplace web app for browsing, filtering, and purchasing items across categories like electronics, furniture, and fashion, with a seller dashboard, persistent cart, and JWT-authenticated checkout flow backed by a Node/Express and MongoDB API.",
     link: "https://online-marketing-u1mj.onrender.com",
-    repo: "https://github.com/Kxngbron/Online-Marketing",
+    repo: "https://github.com/Bron-Banks/Online-Marketing",
     tech: ["JavaScript", "React", "React Router", "Bootstrap", "Node.js", "MongoDB", "JWT"],
     alt: "Screenshot of the Online Marketing app showing a filterable grid of item listings",
   },
@@ -29,7 +29,7 @@ const projects = [
     image: cuisineFinder,
     description:
       "A native Android app for discovering and navigating to restaurants across the Greater Toronto Area, organized by cuisine type, with interactive Google Maps routing and live location tracking.",
-    link: "https://github.com/Kxngbron/Cuisine-Finder",
+    link: "https://github.com/Bron-Banks/Cuisine-Finder",
     linkLabel: "View on GitHub",
     linkIcon: "fa-github",
     tech: ["Kotlin", "Jetpack Compose", "Google Maps SDK", "Material 3"],

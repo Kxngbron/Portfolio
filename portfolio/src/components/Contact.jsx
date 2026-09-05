@@ -18,7 +18,7 @@ const Contact = () => {
               <a href="https://www.linkedin.com/in/bron-banks/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com/Kxngbron" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Bron-Banks" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i className="fab fa-github"></i>
               </a>
             </div>
